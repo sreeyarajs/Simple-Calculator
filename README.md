@@ -1,62 +1,48 @@
-Below is a properly structured and formatted **README** for your calculator application:
+# Simple Calculator
+
+## Description
+
+This is a **Simple calculator** built using Python and Tkinter. It provides a user-friendly interface to perform a variety of mathematical operations, including basic arithmetic, trigonometric functions, logarithms, and more. The application supports custom operators like `π` and `e`, along with advanced scientific operations such as square roots, sine, cosine, tangent, and logarithms.
+
+The app dynamically updates the screen with results, and handles errors such as invalid inputs gracefully by displaying "Error" on the screen.
+
+### Features:
+- **Basic Operations**: Addition, subtraction, multiplication, and division.
+- **Advanced Functions**: Trigonometric functions (sin, cos, tan), logarithmic functions (log, ln), and others like square root, floor, ceil, etc.
+- **Custom Operators**: Supports the use of `π` (pi) and `e` (Euler's number) in calculations.
+- **Dynamic Error Handling**: The calculator handles invalid inputs and errors, displaying an "Error" message when needed.
+- **Hover Effects**: Buttons have a hover effect with color changes when the mouse is over them, enhancing the user experience.
 
 ---
 
-# Simple Calculator using Tkinter
+## Requirements
 
-This is a simple calculator application built using Python and Tkinter. The calculator provides a user-friendly graphical interface for performing basic arithmetic operations like addition, subtraction, multiplication, and division.
+- **Python 3.x**: Ensure you have Python 3.x installed on your machine.
+- **Tkinter**: This GUI application uses the Tkinter library, which is included with Python by default. If it's not installed, you can install it via your package manager.
+``
 
-## Features
+---
 
-- **Basic Arithmetic Operations**: Add, subtract, multiply, divide, and calculate percentages.
-- **Clear Functionality**: Reset the calculator screen using the "C" button.
-- **Error Handling**: Displays "Error" for invalid inputs.
-- **Responsive UI**:
-  - Buttons change color on hover for better user experience.
-  - Dynamically created buttons for an organized and scalable layout.
-- **Intuitive Design**: The calculator UI is clean and easy to use.
+## Usage
 
-## How to Use
+- **Basic Calculations**: Enter numbers and operators on the screen. Press the `=` button to calculate the result.
+- **Scientific Operations**: Press buttons like `sin`, `cos`, `tan`, `sqrt`, `log`, `ln`, etc., to perform scientific operations on the displayed number.
+- **Error Handling**: If an invalid operation is entered (e.g., division by zero), "Error" will be displayed on the screen.
+- **Clear**: Press the `C` button to clear the screen.
+- **Power Operations**: Use `x²` for squaring a number, `x³` for cubing, and `1/x` for computing the reciprocal.
 
-1. Clone or download this repository.
-2. Make sure you have Python 3.x installed on your machine.
-3. Run the `calculator.py` file in your Python environment:
-   ```bash
-   python calculator.py
-   ```
-4. Use the buttons in the UI to perform calculations.
+---
 
-## Code Highlights
+## Screenshots
 
-- **Dynamic Button Creation**: Buttons are generated programmatically based on their labels, ensuring scalability and minimal code repetition.
-- **Error Handling**: The program gracefully handles invalid inputs using the `try-except` block in the `click` function.
-- **Interactive UI**: Button hover effects and responsive design enhance user experience.
+### Main Interface
+The calculator has a clean and user-friendly design with buttons for basic and scientific operations.
 
-### Main Components
-
-- **Screen Display**: An entry widget (`Entry`) shows the current input and results.
-- **Buttons**: 
-  - Number buttons (0–9) for digit inputs.
-  - Operator buttons (`+`, `-`, `*`, `/`, `%`) for calculations.
-  - `C` button to clear the input.
-  - `=` button to evaluate the expression.
-
-### Core Functionality (`click` Function)
-The `click` function handles button clicks:
-- Appends text to the input screen for number and operator buttons.
-- Clears the input when "C" is pressed.
-- Evaluates the mathematical expression when "=" is pressed, handling errors appropriately.
-
-## Screenshot
-
-<img width="294" alt="{D3E8EED8-5256-4FD4-A1F7-1254753A5BB8}" src="https://github.com/user-attachments/assets/3fc003e0-028b-4d60-86fe-069b8b028086">
-<img width="294" alt="{A8F4AC7F-1429-4A7D-9BA1-2A4592E7B327}" src="https://github.com/user-attachments/assets/8213efc4-62f3-48b4-b78b-00452efceee3">
-<img width="294" alt="{F522BD18-56F0-44D4-B670-09010E0A9A49}" src="https://github.com/user-attachments/assets/567b5da6-2f08-4c85-bb74-24e8d5a580d3">
+<img width="296" alt="{EB8ADEAE-969A-4197-B23F-A3D12E643972}" src="https://github.com/user-attachments/assets/f152987c-ef8a-4133-a177-114d58463732">
 
 
-## Future Enhancements
-
-- Add support for advanced operations like square root, exponentiation, etc.
-- Improve layout to handle resizing.
-- Support keyboard input for seamless use.
+### Scientific Operations
+Use the buttons for trigonometric and logarithmic functions to perform advanced calculations.
+Example: 22log
+<img width="296" alt="{D9F269EC-C6A9-4207-A5D9-6AB4D224BB42}" src="https://github.com/user-attachments/assets/e7124e36-fc56-46bf-a536-ef1065df25ae">
 
