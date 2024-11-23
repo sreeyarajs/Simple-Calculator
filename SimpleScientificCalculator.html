@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Scientific Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f8fb;
+            color: #333;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #0078d7;
+        }
+        h2 {
+            color: #009688;
+        }
+        p, li {
+            color: #444;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        code {
+            background-color: #eef;
+            padding: 2px 4px;
+            border-radius: 4px;
+            color: #003366;
+        }
+        .highlight {
+            color: #0078d7;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Scientific Calculator</h1>
+    <p>This Python application is a GUI-based scientific calculator built using <span class="highlight">Tkinter</span>. It features an intuitive layout and supports both basic and advanced mathematical operations.</p>
+
+    <h2>Key Features:</h2>
+    <ul>
+        <li><strong>Basic Operations:</strong> Addition, subtraction, multiplication, and division.</li>
+        <li><strong>Advanced Functions:</strong>
+            <ul>
+                <li>Trigonometric functions: <code>sin</code>, <code>cos</code>, <code>tan</code>, and their hyperbolic versions.</li>
+                <li>Logarithmic functions: <code>log</code>, <code>ln</code>.</li>
+                <li>Power functions: <code>x²</code>, <code>x³</code>, <code>^</code> (custom exponentiation).</li>
+                <li>Constants: <code>π</code> (pi), <code>e</code> (Euler's number).</li>
+                <li>Others: Square root, reciprocal, rounding (floor, ceiling).</li>
+            </ul>
+        </li>
+        <li><strong>Error Handling:</strong> Displays "Error" for invalid operations or inputs.</li>
+        <li><strong>Responsive UI:</strong> Buttons change color on hover for better user experience.</li>
+    </ul>
+
+    <h2>How It Works:</h2>
+    <ol>
+        <li>User inputs an expression using buttons or the on-screen display.</li>
+        <li>Operators like <code>^</code>, <code>π</code>, and <code>e</code> are internally replaced with Python-compatible equivalents.</li>
+        <li>Clicking "=" evaluates the expression and displays the result.</li>
+        <li>Special buttons trigger advanced mathematical functions.</li>
+    </ol>
+
+    <h2>Usage:</h2>
+    <p>Run the script in Python to launch the calculator GUI. Click buttons to perform operations and view results instantly.</p>
+</body>
+</html>
